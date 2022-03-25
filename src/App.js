@@ -7,7 +7,7 @@ function App() {
 
   useEffect(  ()=>{
     (async ()=>{
-      let response =await Axios({
+      let response =await axios({
         method: "GET", url: 'https://jsonplaceholder.typicode.com/posts'});
         setPosts(response.data);
        }) ();
